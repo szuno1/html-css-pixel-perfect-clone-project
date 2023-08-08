@@ -1,0 +1,159 @@
+body {
+    max-width: 1300px;
+    color: rgb(51, 49, 33);
+    background-color: rgb(243, 242, 239);
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    height: 30px;
+    /* align-items: center; */
+    justify-content: space-between;
+    background-color: rgb(243, 242, 239);
+    padding-top: 21px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: sticky;
+}
+
+header img {
+    height: 25px;
+}
+
+.nav__right {
+    display: flex;
+    align-items: center;
+}
+
+.nav__right a, .nav__right .button {
+    padding-right: 23px;
+}
+
+.button {
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(70, 79, 46);
+    color: white;
+    border: 1px solid rgb(70, 79, 46);
+    border-radius: 8px;
+    padding: 9px 22px;
+    align-self: center;
+}
+
+.button:hover {
+    background-color: rgb(41, 46, 27);
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+h1 {
+    align-self: center;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+h2 {
+    align-self: center;
+    font-weight: 500;
+    max-width: 500px;
+    margin-bottom: 60px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.search {
+    position: relative;
+    border: 1px solid transparent;
+    background-color: white;
+    display: flex;
+    margin: 0 36px;
+    max-width: 1180px;
+    border-radius: 17px;
+    justify-content: center;
+    padding: 28px;
+    box-shadow: 0 0 20px rgba(172, 167, 160, 0.377);
+}
+
+.search__input img {
+    height: 20px;
+    padding-right: 20px;
+}
+
+.search__input {
+    border: 1px solid rgba(41, 46, 27, 0.301);
+    color: rgba(41, 46, 27, 0.822);
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    padding: 18px 20px;
+    margin: 0 8px;
+    z-index: 0;
+}
+
+#destinations {
+    width: 30%;
+}
+
+#dates {
+    width: 25%;
+}
+
+#guests {
+    width: 15%;
+}
+
+.search__button img {
+    padding-right: 8px;
+}
+
+.search__button {
+    background-color: rgb(199, 79, 45);
+    color: white;
+    display: flex;
+    justify-content: center;
+    border: 1px solid transparent;
+
+}
+
+.search__button:hover {
+    background-color: rgb(172, 69, 41);
+}
+
+.image {
+    position: relative;
+    bottom: 4.4em;
+    background-image: url("images/front-page.png");
+    background-size: cover;
+    background-position: bottom;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    height: 475px;
+    z-index: -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.image__label {
+    color: white;
+    background-color: rgb(70, 79, 46);
+
+}
