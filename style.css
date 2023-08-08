@@ -45,7 +45,7 @@ header img {
     color: white;
     border: 1px solid rgb(70, 79, 46);
     border-radius: 8px;
-    padding: 9px 22px;
+    padding: 9px 28px;
     align-self: center;
 }
 
@@ -59,6 +59,13 @@ main {
     flex-direction: column;
     padding-left: 24px;
     padding-right: 24px;
+}
+
+main h3 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 21px;
 }
 
 h1 {
@@ -138,6 +145,7 @@ h2 {
 }
 
 .image {
+    box-sizing: border-box;
     position: relative;
     bottom: 4.4em;
     background-image: url("images/front-page.png");
@@ -150,10 +158,189 @@ h2 {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    margin-bottom: 10px;
+    border: hidden;
 }
 
 .image__label {
     color: white;
-    background-color: rgb(70, 79, 46);
+    background-color: rgb(51, 49, 33);
+    font-size: 15px;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin-left: 15px;
+}
 
+.image__label:hover {
+    cursor: pointer;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    gap: 23px;
+    margin-bottom: 80px;
+}
+
+.card {
+    border: 1px solid transparent;
+    border-radius: 25px;
+    border: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card__label {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 32px;
+}
+
+.card-button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 35px;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 25px;
+}
+
+.card-button:hover {
+    cursor: pointer;
+}
+
+.card__text {
+    width: 60%;
+}
+
+.card__text h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card__text h4 {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.card__image {
+    height: 290px;
+}
+
+.big-card {
+    box-sizing: border-box;
+    bottom: 4.4em;
+    background-image: url("images/camp-out-under-the-stars.jpg");
+    background-size: cover;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    border: hidden;
+    height: 475px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    width: 100%;
+    padding: 50px;
+}
+
+.big-card__label {
+    color: white;
+    padding: 25px 20px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    width: 325px;
+}
+
+.big-card__label h3 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.big-card__label h4 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.lift {
+    transition: transform 250ms, box-shadow 250ms;
+}
+
+.lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 3px 4px gray;
+}
+
+#rv-1 {
+    background-image: url("images/rv-1.jpg");
+    background-size: cover;
+    background-position: 0 30%;
+}
+
+#rv-2 {
+    background-image: url("images/rv-2.jpg");
+    background-size: cover;
+    background-position: 0 30%;
+}
+
+#tools-map {
+    background-image: url("images/new-tools/solar-eclipse.png");
+    background-size: cover;
+    scale: 130%;
+}
+
+#long-weekend .card__label {
+    background-color: #c74f2d;
+}
+
+#long-weekend .card__label button {
+    color: #c74f2d;
+}
+
+#best-of-2023 .card__label {
+    background-color: #2b3615;
+}
+
+#best-of-2023 .card__label button {
+    color: #2b3615;
+}
+
+#camp-out-under-the-stars {
+    height: 520px;
+}
+
+#camp-out-label {
+    background-color: #502b39;
+    margin: 0;
+}
+
+#camp-out-label .card-button {
+    color: #502b39;
+}
+
+#annular-solar-eclipse .card__label {
+    background-color: #233d1f;
+}
+
+#explore-public-lands .card__label {
+    background-color: #3e543b;
+}
+
+#work-from-anywhere .card__label {
+    background-color: #8f8d3f;
 }
